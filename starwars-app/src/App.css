@@ -1,0 +1,185 @@
+/* 🌌 GLOBAL VARIABLES */
+:root {
+  --primary-color: #ffd700; /* gold */
+  --secondary-color: #00bfff; /* blue */
+  --dark-bg: #0b0b0b;
+  --card-bg: #111;
+  --text-color: #eaeaea;
+  --accent-glow: rgba(255, 215, 0, 0.7);
+}
+
+/* 🌌 BODY */
+body {
+  background: radial-gradient(circle at top, #111, #000);
+  color: var(--text-color);
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+}
+
+/* 🌌 HEADER */
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  background: #000;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* 🌌 NAVIGATION */
+nav {
+  margin-top: 15px;
+}
+
+nav button {
+  margin: 10px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: var(--primary-color);
+  color: black;
+  box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* 🌌 PAGE LAYOUT */
+.page-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* 🌌 CARD */
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* 🌌 SECTION */
+.section {
+  margin-top: 25px;
+  padding-left: 15px;
+  border-left: 4px solid var(--primary-color);
+}
+
+/* 🌌 GRID (used everywhere) */
+.quotes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* 🌌 FULL WIDTH CARD */
+.full-width-card {
+  border: 1px solid #222;
+  box-shadow: 0 0 10px #000;
+}
+
+/* 🌌 LISTS */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* 🌌 QUIZ */
+.quiz-card-layout {
+  max-width: 800px;
+}
+
+/* quiz buttons */
+.quiz-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quiz-option {
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quiz-option:hover {
+  background: var(--primary-color);
+  color: black;
+  box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* 🌌 QUOTES PAGE */
+.page {
+  padding: 40px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  gap: 70px;
+  max-width: 1200px;
+  max-height: fit-content;
+  margin: 0 auto;
+}
+
+/* quote box */
+.quote {
+  background: #1a1a1a;
+  padding: 15px;
+  border-left: 4px solid var(--secondary-color);
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* 🌌 RESPONSIVE */
+@media (max-width: 768px) {
+  .quotes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav button {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+/* separate media query */
+@media (min-width: 900px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
