@@ -2,7 +2,7 @@
 :root {
   --primary-color: #ffd700; /* gold */
   --secondary-color: #00bfff; /* blue */
-  --dark-bg: #0b0b0b;
+  --dark-bg: #ff0000;
   --card-bg: #111;
   --text-color: #eaeaea;
   --accent-glow: rgba(255, 215, 0, 0.7);
@@ -10,7 +10,7 @@
 
 /* 🌌 BODY */
 body {
-  background: radial-gradient(circle at top, #111, #000);
+  background: radial-gradient(circle at top, #00bfff, #ff0000);
   color: var(--text-color);
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
